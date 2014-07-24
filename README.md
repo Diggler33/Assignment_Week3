@@ -7,20 +7,20 @@ This repo has been created as part of the Getting and Cleaning Data Assignment.
 
 The following requirements were specified.
 
----------------------------------------------------------------------------------------------------------------------------
+
 You should create one R script called run_analysis.R that does the following.
+
 	1.Merges the training and the test sets to create one data set.
 	2.Extracts only the measurements on the mean and standard deviation for each measurement. 
 	3.Uses descriptive activity names to name the activities in the data set
 	4.Appropriately labels the data set with descriptive variable names. 
 	5.Creates a second, independent tidy data set with the average of each variable for each activity and each subject
----------------------------------------------------------------------------------------------------------------------------
+
 
 There are two files provided (Other than README):
 
 	1. Code Book 
 	   This File describes the variables, the data, and any transformations or work that were performed to clean up the data
-
 	2. run_analysis.R
 	   This code file meets the requirements specified above	
 
