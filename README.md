@@ -1,7 +1,12 @@
+-----------------------------------------------------------------
+Getting and Cleaning Data - Assignment
+Ben Palmer - July 2014
+README File
+-----------------------------------------------------------------
 
-=======================
-Introduction
-=======================
+
+## Introduction
+
 
 This repo has been created as part of the Getting and Cleaning Data Assignment. 
 
@@ -24,9 +29,9 @@ There are two files provided (Other than README):
 	2. run_analysis.R
 	   This code file meets the requirements specified above	
 
-=======================
-Data used
-=======================
+
+## Data used
+
 
 The data has been sourced from the UCI Machine Learning Repository (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and represents data collected from the accelerometers from the Samsung Galaxy S smartphone
 
@@ -49,9 +54,8 @@ The following files are used:
 
 
 
-=======================
-PROGRAMMING APPROACH
-=======================
+
+## PROGRAMMING APPROACH
 
 The run_analysis.R file loads, cleans, merges and aggregates the data and then outputs the results to a text file performing the following steps.
 
@@ -66,7 +70,7 @@ The run_analysis.R file loads, cleans, merges and aggregates the data and then o
 
 5. Merge data sets
 
-6. Create clean aggreated data set
+6. Create clean aggregated data set
 
 7. Write outputs to text file (Getting_and_Cleaning Data-Assignment.txt)
 
