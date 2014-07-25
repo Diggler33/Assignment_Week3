@@ -56,7 +56,7 @@ The following files are used:
 
 
 
-## PROGRAMMING APPROACH
+## Programming Approach
 
 The run_analysis.R file loads, cleans, merges and aggregates the data and then outputs the results to a text file performing the following steps.
 
