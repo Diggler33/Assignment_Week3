@@ -95,10 +95,11 @@ The following fields are numeric to 9 decimals
 Extra fields
 =======================
 
-**activitycode**	Numeric 2 (1-4)
+**activitycode**	Numeric 2 (1-6)
 
 **activity**	Character 18
-* Descriptive of activity being performed&nbsp; 
+	* Descriptive of activity being performed
+ 
 	1. Walking
 	2. Walking Upstairs
 	3. Walking Downstairs
@@ -107,5 +108,5 @@ Extra fields
 	6. Laying
 				
 **subjectcode** 	Numeric 2
-* Code assigned to subject performing the test (1 - 30)
+	* Code assigned to subject performing the test (1 - 30)
 
