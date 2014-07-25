@@ -54,9 +54,11 @@ The following files are used:
 	subject_train.txt
 
 
+## Code Book Script
 
+The Code book has been created using the 'Features_info.txt' file supplied with the data. This provides detail of the source datasets. I have also added detail of the new fields created and transformations applied.
 
-## Programming Approach
+## run_analysis.R Script
 
 The run_analysis.R file loads, cleans, merges and aggregates the data and then outputs the results to a text file performing the following steps.
 
