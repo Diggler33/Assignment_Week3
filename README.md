@@ -1,7 +1,8 @@
 -----------------------------------------------------------------
-Getting and Cleaning Data - Assignment
-Ben Palmer - July 2014
-README File
+Getting and Cleaning Data - Assignment  
+Ben Palmer - July 2014  
+README File  
+
 -----------------------------------------------------------------
 
 
