@@ -14,18 +14,19 @@
 # Please review the 'READ ME' file for further information
 #=================================================================================================================
 
+
+#========================================
+#set working directory 
+#========================================
+myWD <- "C:/Users/Ben/STUDY/Getting.and.Cleaning.Data/Assignment"
+setwd(myWD)
+
+
 #===============================  LOAD PACKAGES  ==============================#
 #     PLYR PACKAGE - DDPLY USED TO EXTRACT DATA IN REQUIREMENT 5 
 #==============================================================================#
 library(plyr)
 #==============================================================================#
-
-#========================  SET REQUIRED FILE PATHS ============================#
-
-lookupfiles     <-  "C:/Users/Ben/STUDY/Getting.and.Cleaning.Data/Assignment/UCI HAR Dataset"
-testfiles       <-  "C:/Users/Ben/STUDY/Getting.and.Cleaning.Data/Assignment/UCI HAR Dataset/test"
-trainfiles      <-  "C:/Users/Ben/STUDY/Getting.and.Cleaning.Data/Assignment/UCI HAR Dataset/train"
-assignmentroot  <-  "C:/Users/Ben/STUDY/Getting.and.Cleaning.Data/Assignment"
 
 #========================  SET REQUIRED FILE NAMES ============================#
 
@@ -43,10 +44,6 @@ results_output_file   <-  "Getting_and_Cleaning Data-Assignment.txt"
 #==============================================================================#
 
 
-#========================================
-#set working directory for look-up files
-#========================================
-setwd(lookupfiles)
 
 
 #===========================  LOAD LOOK_UP FILES  =============================#
@@ -87,10 +84,7 @@ stdmeancols$V2  <- gsub(" z","ofz",stdmeancols$V2)
 stdmeancols$V2  <- gsub("std","standarddeviation",stdmeancols$V2)
 #==============================================================================#
 
-#========================================
-#Change working directory for test files
-#========================================
-setwd(testfiles)
+
 #=============================  LOAD TEST FILES  ==============================#
 test.set <- read.table(x_test_file,header=FALSE,na.strings=TRUE) #Test Set data (Headers are contained in Y_test file)
 test.set <- test.set[,targetcols] #USING THE TARGET COLS DATA SET TO ONLY USE REQUIRED COLUMNS (MEAN & STD)
@@ -101,13 +95,6 @@ subject.test <- read.table(subject_test_file,header=FALSE,na.strings=TRUE,sep=",
 # Assign column headers to test data set from cleaned stdmeancols 
 names(test.set) <- stdmeancols$V2
 #==============================================================================#
-
-
-#========================================
-#Change working directory for train files
-#========================================
-setwd(trainfiles)
-
 
 #=============================  LOAD TRAIN FILES  =============================#
 train.set <- read.table(x_train_file,header=FALSE,na.strings=TRUE) #train Set data 
@@ -148,11 +135,6 @@ master.data.set <- rbind(test.set,train.set)
 #======================  CREATE CLEAN AGGREGATED DATASET  =====================#
 result <- ddply(master.data.set, c("subjectcode","activity"), numcolwise(mean))
 #==============================================================================#
-
-#============================================
-#Change working directory for Assignment root
-#============================================
-setwd(assignmentroot)
 
 
 #========================  WRITE RESULTS TO TEXT FILE  ========================#
