@@ -53,26 +53,20 @@ The following files are used:
 PROGRAMMING APPROACH
 =======================
 
-1. Load Look up files
-	activity_labels.txt
-	features.txt
+The run_analysis.R file loads, cleans, merges and aggregates the data and then outputs the results to a text file performing the following steps.
+
+
+1. Load Look up files (activity_labels.txt,features.txt)
 
 2. Clean Features data (Used for column headers of main dataset) 
 
-3. Load Test Files
-	X_test.txt
-	Y_test.txt
-	subject_test.txt
+3. Load Test Files (X_test.txt,Y_test.txt,subject_test.txt)
 
-4. Load train Files
-	X_train.txt
-	Y_train.txt
-	subject_train.txt
+4. Load train Files (X_train.txt,Y_train.txt,subject_train.txt)
 
 5. Merge data sets
 
 6. Create clean aggreated data set
 
-7. Write outputs to text file
-	Getting_and_Cleaning Data-Assignment.txt
+7. Write outputs to text file (Getting_and_Cleaning Data-Assignment.txt)
 
