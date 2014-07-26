@@ -100,12 +100,12 @@ Extra fields
 **activity**	Character 18
 * Descriptive of activity being performed
  
-	1. Walking
-	2. Walking Upstairs
-	3. Walking Downstairs
-	4. Sitting
-	5. Standing
-	6. Laying
+	* (1) Walking
+	* (2) Walking Upstairs
+	* (3) Walking Downstairs
+	* (4) Sitting
+	* (5) Standing
+	* (6) Laying
 				
 **subjectcode** 	Numeric 2
 * Code assigned to subject performing the test (1 - 30)

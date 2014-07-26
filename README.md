@@ -67,13 +67,23 @@ The run_analysis.R file loads, cleans, merges and aggregates the data and then o
 
 2. Clean Features data (Used for column headers of main dataset) 
 
-3. Load Test Files (X_test.txt,Y_test.txt,subject_test.txt)
+3. Limited all records within the features dataset where either mean() or std() is present
 
-4. Load train Files (X_train.txt,Y_train.txt,subject_train.txt)
+4. Load Test Files (X_test.txt,Y_test.txt,subject_test.txt) limiting to only columns matching features dataset
 
-5. Merge data sets
+5. Load train Files (X_train.txt,Y_train.txt,subject_train.txt) limiting to only columns matching features dataset
 
-6. Create clean aggregated data set
+6. Merge data sets
+
+	* Added activity ID from Y_test to X_test.txt
+	* Added descriptive activity field from activity_labels.txt to x_test.txt using activity ID
+	* Added subject data from subject_test.txt to X_test.txt
+	* Added activity ID from Y_train to X_train.txt
+	* Added descriptive activity field from activity_labels.txt to x_train.txt using activity ID
+	* Added subject data from subject_train.txt to X_train.txt
+	* Merged X_test.txt with x_train to form a master data set
+
+6. Create clean aggregated data set with the average of each variable for each activity and each subject using ddply from plyr package
 
 7. Write outputs to text file (Getting_and_Cleaning Data-Assignment.txt)
 
